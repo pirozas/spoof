@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WomenPower - Empowering Girls & Women</title>
+    <style>
+        body {font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 10px; color: #333;}
+        header {background-color: #ff6b6b; color: white; padding: 10px; text-align: center;}
+        nav {background-color: #f4f4f4; padding: 10px; text-align: center;}
+        nav a {margin: 0 5px; color: #333; text-decoration: none;}
+        section {margin: 15px 0;}
+        footer {text-align: center; font-size: 0.8em; margin-top: 20px;}
+        .resource-box {border: 1px solid #ddd; padding: 10px; margin: 10px 0;}
+        .page {display: none;}
+        .active {display: block;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WomenPower</h1>
+        <p>Education • Health • Rights • Opportunities</p>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('education')">Education</a>
+        <a href="#" onclick="showPage('health')">Health</a>
+        <a href="#" onclick="showPage('rights')">Rights</a>
+        <a href="#" onclick="showPage('stories')">Success Stories</a>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <section>
+            <h2>Welcome to WomenPower</h2>
+            <p>A free resource platform empowering women and girls through education, health information, legal rights awareness, and skill development.</p>
+            
+            <div class="resource-box">
+                <h3>Quick Resources:</h3>
+                <ul>
+                    <li><a href="#" onclick="showPage('education')">Girl Child Scholarships</a></li>
+                    <li><a href="#" onclick="showPage('health')">Reproductive Health</a></li>
+                    <li><a href="#" onclick="showPage('rights')">Legal Rights Hotlines</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Today's Featured Content</h2>
+            <h3>Menstrual Hygiene Management</h3>
+            <p>Learn about safe practices and how to access affordable sanitary products in your area. <a href="#" onclick="showPage('health')">Read more</a></p>
+        </section>
+    </div>
+
+    <!-- EDUCATION PAGE -->
+    <div id="education" class="page">
+        <section>
+            <h2>Education Empowerment</h2>
+            <p>Knowledge is power - resources for girls' education</p>
+        </section>
+        
+        <section id="scholarships">
+            <h3>Scholarships & Programs</h3>
+            <ul>
+                <li><strong>National Girl Child Scholarship:</strong> For girls aged 10-18. SMS "EDU GIRL [Your Age]" to 12345</li>
+                <li><strong>STEM for Girls:</strong> Free coding and science programs. Visit local community centers</li>
+                <li><strong>Vocational Training:</strong> Text "SKILL [Your Interest]" to 33444 for tailoring, computing, or beauty courses</li>
+            </ul>
+        </section>
+        
+        <section id="learning">
+            <h3>Free Learning Resources</h3>
+            <div class="resource-box">
+                <p><strong>Basic Literacy:</strong> Text-based lessons - Send "LIT [Topic]" to 54321</p>
+                <p>Topics: MATH, READ, WRITE, SCIENCE</p>
+            </div>
+            
+            <div class="resource-box">
+                <p><strong>Homework Help:</strong> SMS "HW [Your Question]" to 66778</p>
+                <p>Available Mon-Fri 4pm-7pm</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- HEALTH PAGE -->
+    <div id="health" class="page">
+        <section>
+            <h2>Women's Health Resources</h2>
+            <p>Essential health information for women and girls</p>
+        </section>
+        
+        <section id="reproductive">
+            <h3>Reproductive Health</h3>
+            <div class="resource-box">
+                <p><strong>Family Planning:</strong> Free clinics in your area - Text "CLINIC [Your Location]" to 33444</p>
+                <p><strong>Pregnancy Care:</strong> SMS "CARE" to 55667 for prenatal advice</p>
+            </div>
+        </section>
+        
+        <section id="mhm">
+            <h3>Menstrual Hygiene</h3>
+            <div class="resource-box">
+                <p><strong>Making Low-Cost Pads:</strong></p>
+                <ol>
+                    <li>Clean cotton cloth (10"x12")</li>
+                    <li>Fold into 3 layers</li>
+                    <li>Add plastic lining underneath</li>
+                    <li>Change every 4-6 hours</li>
+                </ol>
+            </div>
+            
+            <div class="resource-box">
+                <p><strong>Free Products:</strong> Text "PAD [Your Area]" to 88990 for distribution centers</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- RIGHTS PAGE -->
+    <div id="rights" class="page">
+        <section>
+            <h2>Women's Rights & Protection</h2>
+            <p>Know your rights and available support</p>
+        </section>
+        
+        <section id="legal">
+            <h3>Legal Rights Hotlines</h3>
+            <div class="resource-box">
+                <p><strong>Domestic Violence:</strong> Call 1091 or SMS "HELP" to 1098</p>
+                <p><strong>Property Rights:</strong> Text "LAND" to 54321 for free legal advice</p>
+            </div>
+        </section>
+        
+        <section id="workplace">
+            <h3>Workplace Rights</h3>
+            <ul>
+                <li>Equal pay for equal work</li>
+                <li>Maternity leave entitlement</li>
+                <li>Protection against harassment</li>
+            </ul>
+            <p>SMS "WORK [Your Question]" to 11223</p>
+        </section>
+    </div>
+
+    <!-- SUCCESS STORIES PAGE -->
+    <div id="stories" class="page">
+        <section>
+            <h2>Success Stories</h2>
+            <p>Inspiration from women who overcame challenges</p>
+        </section>
+        
+        <section>
+            <h3>Priya's Tailoring Business</h3>
+            <div class="resource-box">
+                <p>"After the free vocational training, I started with just one sewing machine. Now I employ 5 other women!"</p>
+                <p><em>Learn skills: Text "STITCH" to 44556</em></p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Asha's Education Journey</h3>
+            <div class="resource-box">
+                <p>"The scholarship program helped me complete school. I'm now the first college graduate in my family."</p>
+                <p><em>Apply: SMS "SCHOLAR [Your Age]" to 12345</em></p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>WomenPower is part of Facebook Free Basics - Bringing free essential services to women worldwide</p>
+        <p>For help, SMS "WOMEN" to 1999</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Simple scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
